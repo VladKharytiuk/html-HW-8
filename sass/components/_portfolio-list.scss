@@ -1,0 +1,16 @@
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  margin-top: 34px;
+  margin-bottom: 94px;
+  box-shadow: var(--secondary-text-color);
+  overflow: hidden;
+}
+.portfolio-list > .item {
+  flex-basis: calc(100% / 3);
+  box-shadow: #000000;
+  border-radius: 10px;
+  overflow: hidden;
+}

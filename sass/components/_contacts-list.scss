@@ -1,0 +1,43 @@
+.contacts-list {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  gap: 50px;
+  & .link {
+    font-weight: 400;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 3%;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: $primary-text-color;
+  }
+}
+.contact-svg {
+  color: transparent;
+  background-color: none;
+  border: none;
+  fill: inherit;
+  cursor: pointer;
+}
+
+.contact {
+  display: flex;
+  padding-top: 32px;
+  font-size: 14px;
+  font-weight: 500;
+  padding-bottom: 32px;
+  fill: $primary-text-color;
+  align-items: center;
+  text-decoration: none;
+  color: $primary-text-color;
+  gap: 10px;
+  &:hover,
+  &:focus {
+    color: $accent-hover-color;
+    fill: $accent-hover-color;
+  }
+}

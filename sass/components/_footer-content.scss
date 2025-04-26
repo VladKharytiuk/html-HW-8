@@ -1,0 +1,31 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.logo-footer {
+  display: inline-block;
+  align-items: center;
+  text-decoration: none;
+  font-family: Raleway, sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #ffffff;
+  line-height: 1.5;
+  & span {
+    color: $accent-color;
+  }
+}
+
+footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background: $primary-dark-bg-color;
+}
+.footer-content {
+  display: flex;
+  gap: 70px;
+  align-items: baseline;
+}

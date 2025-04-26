@@ -1,0 +1,36 @@
+.clients-list {
+  display: flex;
+  gap: 30px;
+  margin-top: 50px;
+}
+.client-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 92px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-right: 16px;
+  padding-left: 16px;
+  border-radius: 4px;
+  border: 1px solid #afb1b8;
+  background-color: transparent;
+  fill: #afb1b8;
+}
+
+.client-link:hover {
+  fill: $accent-hover-color;
+  border-color: $accent-hover-color;
+}
+.permanent-icon {
+  background-position: center;
+  border: none;
+  width: 106px;
+  height: 60px;
+}
+
+.permanent-icon:hover {
+  color: $accent-hover-color;
+  cursor: pointer;
+}
