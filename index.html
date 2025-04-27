@@ -23,6 +23,19 @@
       <div class="container header-container">
         <nav class="site-nav">
           <a class="logo" href="index.html"><span>Web</span>Studio</a>
+          <button
+            type="button"
+            class="menu-button is-open"
+            aria-controls="menu-container"
+            aria-expanded="false"
+            data-menu-button
+          >
+            <svg width="40" height="40" aria-label="Перемикач мобільного меню">
+              <use class="icon-cross" href="./images/twoicons.svg#icon-cross"></use>
+              <use class="icon-menu" href="./images/twoicons.svg#icon-menu"></use>
+            </svg>
+          </button>
+          <div class="menu-container" data-menu id="menu-container">контент</div>
           <ul class="nav-list">
             <li><a href="./index.html" class="nav-link"> Студія</a></li>
             <li><a href="./portfolio.html" class="nav-link">Портфоліо</a></li>
