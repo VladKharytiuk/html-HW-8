@@ -109,10 +109,15 @@ p {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
+  z-index: 6;
   margin: 0;
   padding: 0;
   border: none;
   background-color: transparent;
+}
+
+.icon-menu:hover {
+  fill: #027df7;
 }
 
 .menu-button .icon-cross {
@@ -130,8 +135,8 @@ p {
 .menu-container {
   display: none;
   position: absolute;
-  background-color: teal;
-  top: 100%;
+  background-color: #ffffff;
+  top: 0;
   left: 0;
   width: 100%;
   height: 400px;
@@ -217,31 +222,14 @@ p {
           transform: scaleX(1);
 }
 
-.nav-list {
-  display: none;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: 50px;
-  padding: 0;
-  margin: 0;
-}
-
 .nav-list .nav-link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   margin: 0;
-  padding-top: 32px;
-  padding-bottom: 32px;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 40px;
+  line-height: 100%;
   letter-spacing: 2%;
   text-decoration: none;
   color: #212121;
@@ -251,7 +239,7 @@ p {
 }
 
 .contacts-list {
-  display: none;
+  display: block;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -260,7 +248,7 @@ p {
   gap: 50px;
 }
 .contacts-list .link {
-  font-weight: 400;
+  font-weight: 500;
   text-decoration: none;
   font-size: 14px;
   line-height: 1.71;
@@ -272,6 +260,7 @@ p {
 }
 
 .contact-svg {
+  display: none;
   color: transparent;
   background-color: none;
   border: none;
@@ -283,10 +272,8 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-top: 32px;
   font-size: 14px;
   font-weight: 500;
-  padding-bottom: 32px;
   fill: #757575;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -824,8 +811,8 @@ footer {
 
 .modal {
   position: absolute;
-  width: 528px;
-  height: 620px;
+  width: 450px;
+  height: 609px;
   background-color: rgb(255, 255, 255);
   top: 50%;
   left: 50%;
@@ -1011,7 +998,7 @@ textarea:hover, textarea:focus {
           justify-content: center;
   font-weight: 400;
   gap: 10px;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 24px;
   letter-spacing: 3%;
 }

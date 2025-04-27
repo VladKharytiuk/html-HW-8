@@ -1,11 +1,11 @@
 .contacts-list {
-  display: none;
+  display: block;
   align-items: center;
   margin: 0;
   padding: 0;
   gap: 50px;
   & .link {
-    font-weight: 400;
+    font-weight: 500;
     text-decoration: none;
     font-size: 14px;
     line-height: 1.71;
@@ -17,6 +17,7 @@
   }
 }
 .contact-svg {
+  display: none;
   color: transparent;
   background-color: none;
   border: none;
@@ -26,10 +27,8 @@
 
 .contact {
   display: flex;
-  padding-top: 32px;
   font-size: 14px;
   font-weight: 500;
-  padding-bottom: 32px;
   fill: $primary-text-color;
   align-items: center;
   text-decoration: none;
