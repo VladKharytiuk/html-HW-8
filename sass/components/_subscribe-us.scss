@@ -1,11 +1,15 @@
 .subscribe-us-container {
-  display: inline;
+  display: inline-flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   top: 50%;
   right: -50%;
   padding: 0;
   margin: 0;
   gap: 12px;
-  width: fit-content;
+  width: max-content;
 }
 .subscribe-title {
   display: flex;
@@ -24,7 +28,6 @@
   color: inherit;
   border-radius: 4px;
   padding: 15px 16px 15px 16px;
-  width: 358px;
   height: 50px;
   outline: none;
   transition: border-color 250ms $timing-function;
@@ -34,7 +37,6 @@
   position: relative;
   display: inline-flex;
   align-items: center;
-  margin-left: 12px;
   gap: 10px;
   width: fit-content;
   font-weight: 700;
