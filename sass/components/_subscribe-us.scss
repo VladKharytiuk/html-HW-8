@@ -1,15 +1,14 @@
 .subscribe-us-container {
-  display: inline-flex;
-  text-align: center;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   top: 50%;
+  width: 100%;
   right: -50%;
   padding: 0;
   margin: 0;
-  gap: 12px;
-  width: max-content;
+  gap: 20px;
 }
 .subscribe-title {
   display: flex;
@@ -20,9 +19,10 @@
   letter-spacing: 3%;
   text-transform: uppercase;
   color: rgba(255, 255, 255, 1);
-  margin-bottom: 20px;
 }
 .subscribe-us {
+  display: block;
+  width:100%;
   border: 1px solid rgba(255, 255, 255, 0.3);
   background-color: rgba(47, 48, 58, 1);
   color: inherit;
@@ -55,7 +55,9 @@
     background-color: $accent-hover-color;
   }
 }
-
+.subscribe {
+  width: 100%;
+}
 .subscribe-svg {
   fill: $primary-white-color;
 }

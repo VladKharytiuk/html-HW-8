@@ -1,11 +1,9 @@
 .filter-buttons {
   display: flex;
-
-  gap: 8px;
-  justify-content: center;
-  align-items: center;
-  padding-top: 94px;
-  margin-bottom: 50px;
+  gap: 15px 8px;
+  flex-wrap: wrap;
+  margin-top: 60px;
+  margin-bottom: 40px;
   & button {
     font-family: Roboto, sans-serif;
     font-weight: 500;
@@ -24,10 +22,8 @@
   button:hover {
     background-color: $accent-hover-color;
     color: $primary-white-color;
-    box-shadow: inset 0px 0px 0px 1px $accent-hover-color,
-      0px 4px 4px -2px rgba(0, 0, 0, 0.2),
-      0px 8px 8px -4px rgba(0, 0, 0, 0.2),
-      0px 12px 12px -6px rgba(0, 0, 0, 0.2),
+    box-shadow: inset 0px 0px 0px 1px $accent-hover-color, 0px 4px 4px -2px rgba(0, 0, 0, 0.2),
+      0px 8px 8px -4px rgba(0, 0, 0, 0.2), 0px 12px 12px -6px rgba(0, 0, 0, 0.2),
       0px 16px 16px -8px rgba(0, 0, 0, 0.2);
   }
 }

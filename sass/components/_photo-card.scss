@@ -27,6 +27,7 @@
   opacity: 1;
   transform: translateY(100%);
   transition: transform 500ms $timing-function, opacity 500ms $timing-function;
+  
 }
 
 .card-text:hover {
