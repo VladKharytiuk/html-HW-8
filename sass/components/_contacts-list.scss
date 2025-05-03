@@ -1,13 +1,11 @@
 .contacts-list {
   display: flex;
   flex-direction: column-reverse;
-  justify-content: flex-start;
-  gap: 32px;
+  align-items: start;
   margin: 0;
-  font-size: 34px;
   padding: 0;
   & .link {
-    font-weight: 500;
+    font-weight: 400;
     text-decoration: none;
     font-size: 14px;
     line-height: 1.71;
@@ -27,10 +25,16 @@
   cursor: pointer;
 }
 
+.nav-items {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
 .contact {
   display: flex;
-  font-size: 34px;
+  font-size: 24px;
   font-weight: 500;
+  padding-bottom: 32px;
   fill: $primary-text-color;
   align-items: center;
   text-decoration: none;
@@ -41,12 +45,4 @@
     color: $accent-hover-color;
     fill: $accent-hover-color;
   }
-}
-.write-us {
-  font-family: Roboto, sans-serif;
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 100%;
-  letter-spacing: 2%;
-  color: rgba(117, 117, 117, 1);
 }

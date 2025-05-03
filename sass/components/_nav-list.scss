@@ -23,21 +23,62 @@
 }
 
 .nav-list .nav-link {
-    display: flex;
-    margin: 0;
-    font-weight: 500;
-    font-size: 40px;
-    line-height: 100%;
-    letter-spacing: 2%;
-    text-decoration: none;
-    color: $secondary-text-color;
-    &:hover {
-      color: $accent-color;
-    }
+  display: flex;
+  margin: 0;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 100%;
+  letter-spacing: 2%;
+  text-decoration: none;
+  color: $secondary-text-color;
+  &:hover {
+    color: $accent-color;
+  }
 }
 .nav-list {
-    display: flex;
-    flex-direction: column;
-    gap: 35px;
-    margin-top: 48px;
+  display: flex;
+  flex-direction: column;
+}
+.nav-list .nav-link {
+  position: relative;
+}
+.nav-list .nav-link::after {
+  content: '';
+  position: absolute;
+  display: flex;
+  width: 100%;
+  height: 5px;
+  background-color: #027df7;
+  border-radius: 4px;
+  bottom: -0.4px;
+  left: 0;
+  transition: transform 250ms $timing-function;
+  transform: scaleX(0);
+}
+.nav-list .nav-link:hover::after {
+  transform: scaleX(1);
+}
+.nav-list {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+
+.nav-list .nav-link {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding-top: 32px;
+  font-weight: 500;
+  font-size: 40px;
+  letter-spacing: 2%;
+  text-decoration: none;
+  color: $secondary-text-color;
+  &:hover {
+    color: $accent-color;
+  }
 }
