@@ -4,6 +4,7 @@
   align-items: start;
   margin: 0;
   padding: 0;
+  margin-top: auto;
   & .link {
     font-weight: 400;
     text-decoration: none;
@@ -14,15 +15,30 @@
     padding: 0;
     text-decoration: none;
     color: $primary-text-color;
+    @media screen and (min-width: $tablet) {
+      color: $primary-text-color;
+    }
   }
+  @media screen and (min-width: $tablet) {
+    flex-direction: column;
+    margin: 0;
+    gap: 10px;
+  }
+}
+.contacts-list .number{
+  color: $accent-hover-color;
+
 }
 .contact-svg {
   display: none;
-  color: transparent;
-  background-color: none;
-  border: none;
-  fill: inherit;
-  cursor: pointer;
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    color: transparent;
+    background-color: none;
+    border: none;
+    fill: inherit;
+    cursor: pointer;
+  }
 }
 
 .nav-items {
@@ -43,5 +59,12 @@
   &:focus {
     color: $accent-hover-color;
     fill: $accent-hover-color;
+  }
+  @media screen and (min-width: $tablet) {
+    font-family: Roboto, sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 100%;
+    letter-spacing: 2%;
   }
 }

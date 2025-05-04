@@ -38,6 +38,9 @@
 .nav-list {
   display: flex;
   flex-direction: column;
+  @media screen and (min-width: $tablet) {
+    flex-direction: row;
+  }
 }
 .nav-list .nav-link {
   position: relative;
@@ -65,14 +68,21 @@
   width: 100%;
   padding: 0;
   margin: 0;
+  @media screen and (min-width: $tablet) {
+    margin-left: 87px;
+    margin-right: 96px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 100%;
+    padding: 0;
+  }
 }
-
 
 .nav-list .nav-link {
   display: flex;
   align-items: center;
   margin: 0;
-  padding-top: 32px;
+  margin-top: 32px;
   font-weight: 500;
   font-size: 40px;
   letter-spacing: 2%;
