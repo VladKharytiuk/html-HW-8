@@ -1,4 +1,7 @@
 .footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background: $primary-dark-bg-color;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -19,11 +22,6 @@
   }
 }
 
-footer {
-  padding-top: 60px;
-  padding-bottom: 60px;
-  background: $primary-dark-bg-color;
-}
 .footer-content {
   display: flex;
   width: 100%;
@@ -32,4 +30,11 @@ footer {
   justify-content: center;
   text-align: center;
   gap: 70px;
+
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: center;
+  }
 }

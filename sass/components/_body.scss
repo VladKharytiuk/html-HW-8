@@ -18,18 +18,19 @@ body {
   background-color: $primary-white-color;
   margin: 0;
   padding: 0;
-  text-decoration: none;
   padding-top: 60px;
-  // @media screen and (min-width: $tablet) {
-  //   padding-top: 80px;
-  // }
+  @media screen and (min-width: $tablet) {
+    padding-top: 80px;
+    & a {
+      text-decoration: none;
+    }
+  }
 }
 img {
   display: block;
   max-width: 100%;
   height: auto;
 }
-
 
 ul {
   padding: 0;

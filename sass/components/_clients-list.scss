@@ -3,6 +3,10 @@
   grid-template-columns: repeat(2, 1fr);
   gap: 30px;
   margin-top: 50px;
+   @media screen and (min-width: $tablet) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 .client-link {
   display: flex;

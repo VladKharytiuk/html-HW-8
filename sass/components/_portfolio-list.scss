@@ -7,6 +7,10 @@
   margin-bottom: 94px;
   box-shadow: $secondary-text-color;
   overflow: hidden;
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 .portfolio-list > .item {
   flex-basis: calc(100% / 3);

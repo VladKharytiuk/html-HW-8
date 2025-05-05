@@ -3,4 +3,12 @@
   & h2 {
     text-align: center;
   }
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    & h2 {
+      text-align: start;
+    }
+  }
 }
