@@ -35,16 +35,22 @@
     color: $accent-color;
   }
 }
+
 .nav-list {
   display: flex;
   flex-direction: column;
-  @media screen and (min-width: $tablet) {
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
     flex-direction: row;
   }
+  @media screen and (min-width: $desktop) {
+    justify-items: center;
+  }
 }
+
 .nav-list .nav-link {
   position: relative;
 }
+
 .nav-list .nav-link::after {
   content: '';
   position: absolute;
@@ -68,13 +74,20 @@
   width: 100%;
   padding: 0;
   margin: 0;
-  @media screen and (min-width: $tablet) {
-    margin-left: 87px;
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
+    // margin-left: 87px;
     margin-right: 96px;
     font-weight: 500;
     font-size: 14px;
     line-height: 100%;
     padding: 0;
+    color: $secondary-text-color;
+  }
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    margin-left: 93px;
+    margin-right: 0;
+    gap: 50px;
   }
 }
 
@@ -89,5 +102,13 @@
   color: $secondary-text-color;
   &:hover {
     color: $accent-color;
+  }
+}
+.link {
+  @media screen and (min-width: $tablet) {
+    color: $secondary-text-color;
+    &:hover {
+      color: $accent-color;
+    }
   }
 }

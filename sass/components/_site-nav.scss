@@ -1,9 +1,14 @@
 .site-nav {
-  @media screen and (min-width: $tablet) {
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
     display: flex;
     align-items: center;
-    // justify-content: space-between;
     width: 100%;
     text-decoration: none;
+  }
+  @media screen and (min-width:$desktop) {
+    
+  }
+   {
+    
   }
 }
