@@ -37,4 +37,20 @@
     align-content: space-between;
     justify-content: center;
   }
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    flex-direction: row;
+    gap: 70px;
+    align-items: baseline;
+  }
+}
+.footer-nav{
+  @media screen and (min-width: $desktop) {
+    text-align: start;
+  }
+}
+.footer-socials{
+  @media screen and (min-width: $desktop) {
+    text-align: start;
+  }
 }

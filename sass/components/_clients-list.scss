@@ -3,9 +3,14 @@
   grid-template-columns: repeat(2, 1fr);
   gap: 30px;
   margin-top: 50px;
-   @media screen and (min-width: $tablet) {
+  @media screen and (min-width: $tablet) {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+  }
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
   }
 }
 .client-link {
@@ -22,6 +27,10 @@
   border: 1px solid #afb1b8;
   background-color: transparent;
   fill: #afb1b8;
+  @media screen and (min-width: $desktop) {
+    min-width: 170px;
+    min-height: 92px;
+  }
 }
 
 .client-link:hover {

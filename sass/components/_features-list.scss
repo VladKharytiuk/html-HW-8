@@ -11,4 +11,11 @@
       text-align: start;
     }
   }
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    gap: 30px;
+    & h2 {
+      text-align: start;
+    }
+  }
 }
