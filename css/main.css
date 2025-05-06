@@ -588,7 +588,7 @@ p {
 }
 
 .hero {
-  background-image: url(/images/Header.jpg);
+  background-image: url("/images/Header@3x.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-color: rgb(47, 48, 58);
@@ -598,6 +598,13 @@ p {
   text-align: center;
   padding-top: 118px;
   padding-bottom: 118px;
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    height: auto;
+  }
 }
 
 .slogan {
@@ -613,6 +620,21 @@ p {
   letter-spacing: 6%;
   text-transform: uppercase;
   text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .slogan {
+    max-width: 696px;
+    margin-top: 0;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 6%;
+    text-transform: uppercase;
+    text-align: center;
+  }
 }
 
 .main-button {
