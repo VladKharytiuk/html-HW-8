@@ -1,7 +1,8 @@
 .hero {
-  background-image: url('/images/Header@3x.png');
+  background-image: url('/images/img.jpg');
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   background-color: rgba(47, 48, 58, 1);
   max-width: auto;
   height: 400px;
@@ -13,5 +14,14 @@
     padding-top: 200px;
     padding-bottom: 200px;
     height: auto;
+
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      .hero {
+        background-image: url('/images/Img@2x.jpg');
+      }
+    }
   }
 }
