@@ -153,7 +153,17 @@
             </li>
 
             <li class="foto-card-thumb">
-              <img src="./images/notebook.jpg" alt="nout" width="370" height="294" />
+              <img
+                src="./images/notebook.jpg"
+                srcset="
+                  ./images/notebook.jpg         1x,
+                  https://placehold.co/740x588  2x,
+                  https://placehold.co/1110x882 3x
+                "
+                alt="nout"
+                width="370"
+                height="294"
+              />
               <p class="foto-text">Мобільні додатки</p>
             </li>
 
@@ -164,7 +174,6 @@
           </ul>
         </div>
       </section>
-
       <section class="team section">
         <h2 class="intro">Наша команда</h2>
         <div class="container">
@@ -206,7 +215,7 @@
                 </ul>
               </div>
             </li>
-            <li class="team-man">
+            <li class="team-man" id="data">
               <img src="./images/myhailo.jpg" alt="myhailo" width="270" height="260" />
               <div class="self-introduction">
                 <h3>Михайло Єрмаков</h3>

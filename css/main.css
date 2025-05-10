@@ -285,6 +285,11 @@ p {
 .logo span {
   color: #2196f3;
 }
+@media screen and (min-width: 768px) {
+  .logo {
+    margin-right: 87px;
+  }
+}
 
 @media screen and (min-width: 768px) {
   .site-nav {
@@ -588,7 +593,7 @@ p {
 }
 
 .hero {
-  background-image: url("../images/img.jpg");
+  background-image: url("../images/Img.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -609,7 +614,7 @@ p {
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero .hero {
-    background-image: url("../images/Img@2x.jpg");
+    background-image: url("/images/Img@2x.jpg");
   }
 }
 

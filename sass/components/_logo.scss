@@ -9,4 +9,7 @@
   & span {
     color: $accent-color;
   }
+  @media screen and (min-width: $tablet) {
+    margin-right: 87px;
+  }
 }
