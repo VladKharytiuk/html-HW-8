@@ -1,5 +1,7 @@
 .features-list {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
   & h2 {
     text-align: center;
   }
@@ -13,6 +15,7 @@
   }
   @media screen and (min-width: $desktop) {
     display: flex;
+    flex-direction: row;
     gap: 30px;
     & h2 {
       text-align: start;

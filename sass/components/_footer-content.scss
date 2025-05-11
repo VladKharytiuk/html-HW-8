@@ -15,6 +15,7 @@
   font-size: 26px;
   font-weight: 700;
   margin-bottom: 20px;
+  letter-spacing: 0.03em;
   color: #ffffff;
   line-height: 1.5;
   & span {
@@ -44,13 +45,20 @@
     align-items: baseline;
   }
 }
-.footer-nav{
+.footer-nav {
+  @media screen and (min-width: $tablet) {
+    text-align: start;
+    color: #ffffff;
+    font-size: 14px;
+  }
+}
+.footer-socials {
   @media screen and (min-width: $desktop) {
     text-align: start;
   }
 }
-.footer-socials{
-  @media screen and (min-width: $desktop) {
-    text-align: start;
-  }
+.footer-nav {
+  font-size: 14px;
+  color: #ffffff;
+  letter-spacing: 0.03em;
 }

@@ -27,7 +27,6 @@
   opacity: 1;
   transform: translateY(100%);
   transition: transform 500ms $timing-function, opacity 500ms $timing-function;
-  
 }
 
 .card-text:hover {
@@ -38,7 +37,7 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 28px;
-  letter-spacing: 3%;
+  letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 1);
 }
 .card-content {
@@ -49,4 +48,10 @@
   padding: 20px 24px;
   gap: 4px;
   overflow: hidden;
+  & h2 {
+    letter-spacing: 0.06em;
+  }
+  & p {
+    letter-spacing: 0.03em;
+  }
 }

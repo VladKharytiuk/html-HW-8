@@ -3,6 +3,7 @@
   flex-direction: column-reverse;
   align-items: start;
   margin: 0;
+  letter-spacing: 0.02em;
   padding: 0;
   margin-top: auto;
   & .link {
@@ -45,7 +46,6 @@
     background-color: none;
     border: none;
     fill: inherit;
-    cursor: pointer;
   }
 }
 

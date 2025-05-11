@@ -4,7 +4,7 @@
   font-weight: 700;
   font-size: 14px;
   line-height: 100%;
-  letter-spacing: 3%;
+  letter-spacing: 0.03em;
   text-transform: uppercase;
 }
 .join-us-list {
@@ -19,6 +19,7 @@
   fill: $icon-color-fill;
   background-color: rgba(255, 255, 255, 0.1);
   align-items: center;
+  fill: #ffffff;
   justify-content: center;
   border-radius: 50%;
   &:hover,
