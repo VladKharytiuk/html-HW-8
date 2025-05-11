@@ -599,7 +599,8 @@ p {
 }
 
 .hero {
-  background-image: url("../images/Img.jpg");
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4))), url("/images/Header480.jpg");
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4)), url("/images/Header480.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -611,8 +612,16 @@ p {
   padding-top: 118px;
   padding-bottom: 118px;
 }
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4))), url("/images/Header768.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4)), url("/images/Header768.jpg");
+  }
+}
 @media screen and (min-width: 1200px) {
   .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4))), url("/images/header1200.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4)), url("/images/header1200.jpg");
     padding-top: 200px;
     padding-bottom: 200px;
     height: auto;
