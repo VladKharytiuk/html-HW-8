@@ -26,7 +26,7 @@
 .team-man {
   display: flex;
   flex-direction: column;
-  & hover {
+  &:hover {
     box-shadow: 0px 2px 1px 0px #00000033, 0px 1px 1px 0px #00000024, 0px 1px 3px 0px #0000001f;
   }
 }
@@ -43,9 +43,6 @@
   box-shadow: $card-shadow;
   padding-bottom: 30px;
   padding-top: 30px;
-  & hover {
-    box-shadow: inset 2px 1px 0px #00000033, 0px 1px 1px 0px #00000024, 0px 1px 3px 0px #0000001f;
-  }
 }
 img {
   width: 100%;
