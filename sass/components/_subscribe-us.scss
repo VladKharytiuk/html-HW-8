@@ -83,3 +83,9 @@
 .subscribe-svg {
   fill: $primary-white-color;
 }
+@media screen and (min-width: $desktop) {
+  .subscribe-us-form {
+    display: flex;
+    flex-direction: column
+  }
+}
