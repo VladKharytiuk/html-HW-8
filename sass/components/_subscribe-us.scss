@@ -9,24 +9,15 @@
   padding: 0;
   margin: 0;
   gap: 20px;
+  @media screen and (min-width: $tablet) {
+  }
   @media screen and (min-width: $desktop) {
     display: flex;
-    // top: 50%;
-    // right: -50%;
-    padding: 0;
-    margin: 0;
-    gap: 12px;
-    align-items: center;
-    justify-content: center;
-    width: fit-content;
-    flex-direction: row;
-    // align-content: space-between;
-    // justify-content: start;
+    gap: 20px;
+    align-items: flex-start;
   }
 }
 .subscribe-title {
-  display: flex;
-
   font-weight: 700;
   font-size: 14px;
   line-height: 100%;
@@ -48,18 +39,26 @@
   height: 50px;
   outline: none;
   transition: border-color 250ms $timing-function;
-  @media screen and (min-width: $tablet) {
-    max-width: 450px;
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
+    width: 450px;
   }
   @media screen and (min-width: $desktop) {
-    max-width: 450px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background-color: rgba(47, 48, 58, 1);
+    color: inherit;
+    border-radius: 4px;
+    padding: 15px 16px 15px 16px;
+    width: 358px;
+    height: 50px;
+    outline: none;
+    transition: border-color 250ms $timing-function;
   }
 }
 
 .subscribe-us-btn {
   display: inline-flex;
   align-items: center;
-  gap: 10px;
+  margin-top: 30px;
   width: fit-content;
   font-weight: 700;
   font-size: 16px;
@@ -76,6 +75,9 @@
   &:focus {
     background-color: $accent-hover-color;
   }
+  @media screen and (min-width: $desktop) {
+    margin: 0;
+  }
 }
 .subscribe {
   width: 100%;
@@ -83,9 +85,12 @@
 .subscribe-svg {
   fill: $primary-white-color;
 }
-@media screen and (min-width: $desktop) {
-  .subscribe-us-form {
+
+.subscribe-us-form {
+  @media screen and (min-width: $desktop) {
     display: flex;
-    flex-direction: column
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
   }
 }
