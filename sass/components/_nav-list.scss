@@ -152,3 +152,12 @@
     transform: scaleX(1);
   }
 }
+.active {
+  color: $accent-color;
+}
+.active.link::after {
+  transform: scaleX(1);
+}
+.nav-link.active {
+  color: $accent-color;
+}

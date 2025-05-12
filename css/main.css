@@ -137,6 +137,10 @@ p {
   padding: 0;
   border: none;
   background-color: transparent;
+  cursor: pointer;
+}
+.menu-button:hover, .menu-button:focus {
+  fill: #027df7;
 }
 @media screen and (min-width: 768px) {
   .menu-button {
@@ -144,19 +148,15 @@ p {
   }
 }
 
-.icon-menu:hover {
-  fill: #027df7;
-}
-
-.menu-button .icon-cross {
+.menu-button .icon-menu {
   display: none;
 }
 
-.menu-button.is-open .icon-cross {
+.menu-button.is-open .icon-menu {
   display: block;
 }
 
-.menu-button.is-open .icon-menu {
+.menu-button.is-open .icon-cross {
   display: none;
 }
 
@@ -251,10 +251,6 @@ p {
           transform: translatex(0);
   width: 1px;
   background-color: rgba(33, 33, 33, 0.2);
-}
-
-.mobile-header-container .link {
-  position: absolute;
 }
 
 .container {
@@ -513,6 +509,19 @@ p {
             transform: scaleX(1);
   }
 }
+.active {
+  color: #2196f3;
+}
+
+.active.link::after {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+
+.nav-link.active {
+  color: #2196f3;
+}
+
 .contacts-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -822,7 +831,7 @@ p {
 
 .intro {
   font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 100%;
   letter-spacing: 0.03em;
   text-align: center;
@@ -934,6 +943,22 @@ p {
           box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
   padding-bottom: 30px;
   padding-top: 30px;
+}
+.self-introduction h3 {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+.self-introduction p {
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0.03em;
+  text-align: center;
 }
 
 img {
@@ -1408,7 +1433,7 @@ img {
 
 .modal {
   position: absolute;
-  width: auto;
+  width: 450px;
   height: auto;
   background-color: rgb(255, 255, 255);
   top: 50%;
