@@ -18,7 +18,6 @@
 }
 .card-text {
   position: absolute;
-
   opacity: 0;
   width: 100%;
   height: 100%;
@@ -50,7 +49,14 @@
   overflow: hidden;
 }
 
-.photo-card:hover {
+.photo-card:hover,
+.photo-card:focus {
   box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06),
     0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+}
+
+.card-content:hover,
+.card-content:focus .card-text {
+  transform: translateY(0);
+  opacity: 1;
 }

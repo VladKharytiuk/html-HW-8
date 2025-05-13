@@ -40,22 +40,20 @@
   display: flex;
   width: 18px;
   height: 18px;
-  top: 50%;
+  top: 40%;
   left: 15px;
-  transform: translatex(50%);
+  &:focus {
+    fill: $accent-hover-color;
+  }
 }
 .form {
-  // height: auto;
-  // width: auto;
-  // margin-left: auto;
-  // margin-right: auto;
-  padding: 40px 40px 40px 40px;
+   padding: 40px 40px 40px 40px;
 }
 .form-field {
   display: flex;
   flex-direction: column;
   text-align: left;
-  padding: 10px;
+  padding-bottom: 10px;
   font-weight: 400;
   font-size: 12px;
   line-height: 100%;
@@ -65,6 +63,7 @@
 }
 textarea {
   resize: none;
+  outline: none;
   cursor: pointer;
   padding-top: 12px;
   padding-left: 16px;
@@ -80,8 +79,10 @@ textarea {
   height: 40px;
   border-radius: 4px;
   border: 1px solid rgba(33, 33, 33, 0.2);
-  &:hover {
+  &:hover,
+  &:focus {
     border: 1px solid $accent-hover-color;
+    outline: none;
     cursor: pointer;
     transition: transform 250ms $timing-function;
   }
@@ -123,8 +124,11 @@ textarea {
   font-size: 12px;
   line-height: 24px;
   letter-spacing: 0.03em;
+  @media screen and (min-width: $desktop) {
+    font-size: 14px;
+  }
 
-  @media screen and (min-width:320px) and (max-width: 1600px) {
+  @media screen and (min-width: 320px) and (max-width: 1600px) {
     & a {
       text-decoration: underline;
       color: $accent-color;

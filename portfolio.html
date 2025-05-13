@@ -33,14 +33,14 @@
               aria-expanded="false"
               data-menu-button
             >
-              <svg width="40" height="40" aria-label="Перемикач мобільного меню">
-                <use class="icon-cross" href="./images/twoicons.svg#icon-menu"></use>
-                <use class="icon-menu" href="./images/twoicons.svg#icon-cross"></use>
-              </svg>
+            <svg width="40" height="40" aria-label="Перемикач мобільного меню">
+              <use class="icon-menu" href="./images/twoicons.svg#icon-menu"></use>
+              <use class="icon-cross" href="./images/twoicons.svg#icon-cross"></use>
+            </svg>
             </button>
             <div class="menu-container" data-menu id="menu-container">
               <ul class="nav-list">
-                <li><a href="./index.html" class="nav-link "> Студія</a></li>
+                <li><a href="./index.html" class="nav-link"> Студія</a></li>
                 <li><a href="./portfolio.html" class="nav-link active">Портфоліо</a></li>
                 <li><a href="" class="nav-link">Контакти</a></li>
               </ul>
@@ -290,7 +290,7 @@
 
     <footer class="footer">
       <div class="container">
-        <div class="footer-content">
+        <div class="footer-content container">
           <div class="footer-nav">
             <a class="logo-footer" href="index.html"><span>Web</span>Studio</a>
             <ul class="find-us-list">
@@ -334,21 +334,24 @@
               </li>
             </ul>
           </div>
-          <div class="subscribe-us-container">
+          <form class="subscribe-us-container">
             <h2 class="subscribe-title">Підпишіться на розсилку</h2>
-            <label class="subscribe" for="newsletter">
-              <input class="subscribe-us" type="email" name="newsletter" placeholder="E-mail"
-            /></label>
-            <button class="subscribe-us-btn">
-              Підписатися
-              <svg class="subscribe-svg" width="24" height="24">
-                <use href="./images/modal-icns.svg#icon-send"></use>
-              </svg>
-            </button>
-          </div>
+            <div class="subscribe-us-form">
+              <label class="subscribe" for="newsletter">
+                <input class="subscribe-us" type="email" name="newsletter" placeholder="E-mail"
+              /></label>
+              <button class="subscribe-us-btn">
+                Підписатися
+                <svg class="subscribe-svg" width="24" height="24">
+                  <use href="./images/modal-icns.svg#icon-send"></use>
+                </svg>
+              </button>
+            </div>
+          </form>
         </div>
       </div>
     </footer>
     <script src="./js/mobile-menu.js"></script>
+    
   </body>
 </html>
