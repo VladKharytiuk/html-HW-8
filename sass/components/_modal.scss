@@ -47,7 +47,7 @@
   }
 }
 .form {
-   padding: 40px 40px 40px 40px;
+  padding: 40px 40px 40px 40px;
 }
 .form-field {
   display: flex;
@@ -128,7 +128,7 @@ textarea {
     font-size: 14px;
   }
 
-  @media screen and (min-width: 320px) and (max-width: 1600px) {
+  @media screen and (min-width: 320px) {
     & a {
       text-decoration: underline;
       color: $accent-color;

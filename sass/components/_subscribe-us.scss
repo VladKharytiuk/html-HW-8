@@ -39,6 +39,7 @@
   height: 50px;
   outline: none;
   transition: border-color 250ms $timing-function;
+
   @media screen and (min-width: $tablet) and (max-width: 1199px) {
     width: 450px;
   }
@@ -48,7 +49,7 @@
     color: inherit;
     border-radius: 4px;
     padding: 15px 16px 15px 16px;
-    width: 358px;
+    width: 418px;
     height: 50px;
     outline: none;
     transition: border-color 250ms $timing-function;
@@ -87,6 +88,7 @@
 }
 
 .subscribe-us-form {
+  width: 100%;
   @media screen and (min-width: $desktop) {
     display: flex;
     flex-direction: row;
