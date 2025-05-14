@@ -10,7 +10,9 @@ html {
   box-sizing: inherit;
 }
 
-
+body .menu-container.is-open {
+  overflow: hidden;
+} 
 body {
   font-family: Roboto, sans-serif;
   font-size: 16px;
