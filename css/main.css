@@ -1871,10 +1871,16 @@ textarea:hover, textarea:focus {
       -ms-flex-direction: column;
           flex-direction: column;
   border: 1px solid #eeeeee;
+  border-radius: 1px;
   border-top: none;
-  padding: 20px 24px;
+  padding: 20px 24px 20px 24px;
   gap: 4px;
+  width: 100%;
   overflow: hidden;
+  letter-spacing: 0.06em;
+}
+.card-content p {
+  letter-spacing: 0.03em;
 }
 
 .photo-card:hover,
@@ -1888,4 +1894,10 @@ textarea:hover, textarea:focus {
   -webkit-transform: translateY(0);
           transform: translateY(0);
   opacity: 1;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .photo-card:first-child .card-content {
+    height: 147px;
+  }
 }/*# sourceMappingURL=main.css.map */
