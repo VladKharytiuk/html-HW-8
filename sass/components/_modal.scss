@@ -1,16 +1,23 @@
 .modal {
   position: absolute;
   width: 450px;
-  height: auto;
+  min-height: auto;
   background-color: rgba(255, 255, 255, 1);
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%) scale(1);
+  transform: translate(-50%, -50%) scale(0.75);
   transition: transform 250ms $timing-function;
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14),
     0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+  @media screen and (max-width: 350px) {
+    transform: translate(-50%, -50%) scale(0.6);
+  }
+  @media screen and (min-width: $tablet) {
+    transform: translate(-50%, -50%) scale(1);
+  }
   @media screen and (min-width: $desktop) {
     width: 528px;
+    transform: translate(-50%, -50%) scale(1);
   }
 }
 .modal-button {
