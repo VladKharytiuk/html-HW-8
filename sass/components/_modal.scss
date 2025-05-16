@@ -39,9 +39,11 @@
   fill: $accent-hover-color;
   transition: transform 250ms $timing-function;
 }
-.form-input:hover ~ .modal-svg {
+.form-input:hover,
+.form-input:focus ~ .modal-svg {
   fill: $accent-hover-color;
 }
+
 .modal-svg {
   position: absolute;
   display: flex;
