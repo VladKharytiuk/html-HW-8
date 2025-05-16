@@ -12,6 +12,10 @@ html {
           box-sizing: inherit;
 }
 
+body.no-scroll {
+  overflow: hidden;
+}
+
 body {
   font-family: Roboto, sans-serif;
   font-size: 16px;
@@ -1711,7 +1715,7 @@ textarea:hover, textarea:focus {
   font-weight: 700;
   font-size: 16px;
   line-height: 2.14;
-  letter-spacing: 6%;
+  letter-spacing: 0.06em;
   background-color: #2196f3;
   color: #ffffff;
   margin-top: 30px;
