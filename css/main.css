@@ -12,10 +12,6 @@ html {
           box-sizing: inherit;
 }
 
-body.no-scroll {
-  overflow: hidden;
-}
-
 body {
   font-family: Roboto, sans-serif;
   font-size: 16px;
