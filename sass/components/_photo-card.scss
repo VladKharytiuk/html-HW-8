@@ -1,23 +1,6 @@
-.photo-card:hover,
-.photo-card:focus {
-  display: flex;
-  flex-direction: column;
-  box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06),
-    0px 1px 1px 0px rgba(0, 0, 0, 0.12);
-}
-.photo-card:hover .photo-thumb::before {
-  transform: translateY(0);
-}
 .photo-thumb {
   position: relative;
   overflow: hidden;
-
-  &:hover .card-text {
-    transform: translateY(0);
-    opacity: 1;
-    top: 0;
-    left: 0;
-  }
 }
 .card-text {
   position: absolute;
@@ -27,13 +10,12 @@
   padding: 63px 24px 0 24px;
   background-color: rgba(33, 150, 243, 0.9);
   opacity: 1;
+  top: 0;
+  left: 0;
   transform: translateY(100%);
   transition: transform 500ms $timing-function, opacity 500ms $timing-function;
 }
 
-.card-text:hover {
-  opacity: 1;
-}
 .card-text p {
   font-family: Roboto, sans-serif;
   font-weight: 400;
@@ -62,11 +44,15 @@
 .photo-card:focus {
   box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06),
     0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+
+  .card-text {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 .photo-card:hover,
 .card-card:focus .card-text {
-  transform: translateY(0);
   opacity: 1;
 }
 .photo-card:first-child .card-content {
