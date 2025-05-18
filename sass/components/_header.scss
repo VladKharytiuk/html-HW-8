@@ -54,11 +54,6 @@
   }
 }
 
-// .menu-button.is-open {
-//   fill: $accent-hover-color;
-//   transition: transform 250ms $timing-function;
-// }
-
 .menu-button .icon-menu {
   display: none;
 }
@@ -68,6 +63,10 @@
 .menu-button.is-open .icon-cross {
   display: none;
 }
+.menu-button {
+  overflow: hidden;
+}
+
 .menu-container {
   @media screen and (max-width: 767px) {
     display: none;
@@ -135,6 +134,3 @@
     background-color: rgba(33, 33, 33, 0.2);
   }
 }
-// .mobile-header-container .link {
-//   position: absolute;
-// }

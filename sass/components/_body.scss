@@ -12,6 +12,9 @@ html {
 body.no-scroll {
   overflow: hidden;
 }
+body .menu-container.is-open {
+  overflow: hidden;
+}
 
 body {
   font-family: Roboto, sans-serif;
