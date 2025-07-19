@@ -8,7 +8,8 @@
 
     menuBtnRef.classList.toggle('is-open');
     menuBtnRef.setAttribute('aria-expanded', !expanded);
-
+    document.body.classList.add('modal-open'); // коли модалка відкрита
+    document.body.classList.remove('modal-open'); // коли модалка закрита
     mobileMenuRef.classList.toggle('is-open');
 
     mobileMenuScroll.classList.toggle('no-scroll');
